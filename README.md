@@ -1,5 +1,7 @@
 # HTML5 Starter
 
+A responsive mobile-first starting point for web projects.
+
 
 ### Special Thanks to:
 - Paul Irish & the HTML5 Boilerplate
