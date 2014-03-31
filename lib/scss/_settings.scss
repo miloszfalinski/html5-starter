@@ -1,0 +1,55 @@
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: Settings
+ *
+ * Think of this as a 'variable file'. All custom reusable
+ * values will be found here. Neat's grid is also configured here.
+ */
+
+
+/*
+ * COLORS
+ * Need help w/ choosing your colors? Try this site out:
+ * http://0to255.com/
+ */
+
+$yellow: #ebe16f;
+$red: #fbe3e4;
+$green: #e6efc2;
+$blue: #d5edf8;
+
+$black: #000;
+$white: #fff;
+
+
+/*
+ * GRID
+ */
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.5;
+
+// Change the grid settings
+$max-width: em(1030, 12);
+
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 3);
+
+/*
+ * TYPOGRAPHY
+ */
+
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+/*
+ * use the best ampersand
+ * http://simplebits.com/notebook/2008/08/14/ampersands-2/
+ */
+span.amp {
+	font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+	font-style: italic;
+}

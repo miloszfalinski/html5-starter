@@ -4,15 +4,18 @@ Author:
 URL:
 
 Stylesheet: Main Stylesheet
-
-Here we organize our media queries and setup our main stylesheet.
 ******************************************************************/
 
-/* import reset */
-@import "normalize";
+/* import normalize.css */
+@import "../../bower_components/normalize.css/normalize.css";
+
+/* import bourbon */
+@import "../../bower_components/bourbon/dist/_bourbon";
+/* import neat */
+@import "../../bower_components/neat/app/assets/stylesheets/neat";
 
 /* import mixins */
-@import "mixins";
+@import "settings";
 
 /******************************************************************
 BASE (MOBILE) SIZE

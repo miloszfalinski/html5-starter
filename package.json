@@ -1,0 +1,12 @@
+{
+  "name": "html5-starter",
+  "description": "A starter project for a modern HTML/SCSS build",
+  "author": "Milosz Falinski @ Studio NEC <m@studionec.com>",
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-cssjoin": "latest",
+    "grunt-contrib-cssmin": "latest"
+  }
+}

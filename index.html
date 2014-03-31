@@ -11,16 +11,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>Title Tag</title>
-	
+
 	<!-- seo meta stuff -->
 	<meta name="description" content="">
 	<meta name="author" content="">
-	
+
 	<!-- mobile meta -->
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<!-- minimal-ui added for ios 7.1 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,
+minimal-ui">
+
 	<!-- favicons & icons -->
 	<!-- For iPhone 4 -->
 	<!-- <link rel="apple-touch-icon-precomposed" sizes="114x114" href="lib/images/h/apple-touch-icon.png"> -->
@@ -34,53 +36,51 @@
 	<!-- <link rel="shortcut icon" href="lib/images/l/apple-touch-icon.png"> -->
 	<!-- For everything else -->
 	<link rel="shortcut icon" href="lib/images/favicon.ico">
-		
-	<!-- loading stylesheets -->
-	<link rel="stylesheet" href="lib/css/style.css"> 
+
+	<!-- load compiled stylesheets -->
+	<link rel="stylesheet" href="lib/css/style.css">
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
 		<link rel="stylesheet" href="lib/css/ie.css">
 	<![endif]-->
-	
+
 	<!-- typekit or google web font scripts -->
-  	
+
 	<!-- custom modernizr minified -->
 	<script src="lib/js/libs/modernizr.custom.min.js"></script>
-	
+
 </head>
 
 <body>
 
 	<header role="banner" class="header">
-	
+
 	</header>
-	
+
 	<div role="main" class="content">
-	
+		<h1>Hello World!</h1>
 	</div>
-	
+
 	<div role="complementary" class="sidebar">
-	
+
 	</div>
-	
+
 	<footer role="contentinfo" class="footer">
-	
+
 	</footer>
-	
-	
-	
-	<!-- Grab Google CDN's jQuery, without a fallback (if Google fails, the world will implode) -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11/jquery.min.js"></script>
+
 	<!-- scripts complied and minified for speed -->
 	<script src="lib/js/scripts.js"></script>
-	
+
 	<!-- below prompts IE6 users to install Google Chrome Frame -->
 	<!--[if lt IE 7 ]>
     	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 	<![endif]-->
-  
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')</script>
 </body>
 
-</html> <!-- end page, what a ride! -->
+</html>
