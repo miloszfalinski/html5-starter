@@ -4,7 +4,7 @@ A responsive mobile-first starting point for web projects.
 
 ## Installation
 
-Requirements for this project are: `Ruby SASS gem`, `Node.js & npm`, `bower` and `grunt-cli`.
+Requirements for this project are: ruby gem `SASS`, `node.js`, `npm` and node packages: `bower` and `grunt-cli`.
 
 Install SASS with:
 ```shell
