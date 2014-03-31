@@ -23,9 +23,22 @@ Assuming you have `sass` and `node` you need to install `grunt` and `bower`.
 ```shell
 npm install -g grunt-cli
 npm install -g bower
-
 ```
 
+Now you have all the packages required. In the project directory run:
+
+```shell
+npm install
+bower install
+```
+This will install latest versions of all libraries: Bourbon, Neat, Normalize.css, jQuery and more. You can add more packages to `bower.json`.
+
+## Usage
+
+Assuming you're happy with the default configuration all you need to do is run 
+```shell
+grunt
+```
 
 ## Special Thanks to:
 - Paul Irish & the HTML5 Boilerplate
