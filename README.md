@@ -31,14 +31,24 @@ Now you have all the packages required. In the project directory run:
 npm install
 bower install
 ```
+
 This will install latest versions of all libraries: Bourbon, Neat, Normalize.css, jQuery and more. You can add more packages to `bower.json`.
 
 ## Usage
 
-Assuming you're happy with the default configuration all you need to do is run 
+Assuming you're happy with the default configuration all you need to do is run:
 ```shell
 grunt
 ```
+
+Grunt is set up to watch for changes in the directory, compile all your sass files, minify them and reload your browser once new css is compiled. It'll also run jslint on all javascript files. 
+
+To generate a custom modernizr file with just the things you need, run:
+```shell
+grunt modernizr
+```
+
+
 
 ## Special Thanks to:
 - Paul Irish & the HTML5 Boilerplate
@@ -55,6 +65,11 @@ https://github.com/miloszfalinski/html5-starter
 
 
 ## Change Log & History
+
+### v0.2
+- configured Bower and Grunt
+- set up Bourbon, Neat and other frontend libraries
+- added responsive javascript
 
 ### v0.1 
 - ported bones by Eddie Machado

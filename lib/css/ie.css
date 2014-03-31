@@ -1,11 +1,11 @@
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: IE Styles
-These styles are all loaded for IE so that they get the regular
-view since the older versions don't understand Media Queries.
-******************************************************************/
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: IE Styles
+ * These styles are all loaded for IE so that they get the regular
+ * view since the older versions don't understand Media Queries.
+ */
 /* import reset */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
@@ -463,56 +463,56 @@ span.amp {
   font-style: italic; }
 
 /* import styles on top of base */
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Base Mobile Styles
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible.
-
-******************************************************************/
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: Base Mobile Styles
+ *
+ * Be light and don't over style since everything here will be
+ * loaded by mobile devices. You want to keep it as minimal as
+ * possible.
+ *
+ */
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: 481 & Up
-
-******************************************************************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: 768 & Up
-
-This is the base tablet style.
-******************************************************************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: 1030 & Up
-
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device or a tablet. Here's where
-you can add resource intensive styles.
-******************************************************************/
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: 481 & Up
+ *
+ */
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: 768 & Up
+ *
+ * This is the base tablet style.
+ */
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: 1030 & Up
+ *
+ * This is the average viewing window. So Desktops, Laptops, and
+ * in general anyone not viewing on a mobile device or a tablet. Here's where
+ * you can add resource intensive styles.
+ */
 /* import print */
-/******************************************************************
-Site Name: 
-Author: 
-
-Stylesheet: Print Stylesheet
-
-Feel free to customize this. Remember to add things that won't make
-sense to print at the bottom. Things like nav, ads, and forms should
-be set to display none.
-******************************************************************/
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: Print Stylesheet
+ *
+ * Feel free to customize this. Remember to add things that won't make
+ * sense to print at the bottom. Things like nav, ads, and forms should
+ * be set to display none.
+ */
 * {
   background: transparent !important;
   color: black !important;

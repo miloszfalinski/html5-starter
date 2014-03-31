@@ -1,10 +1,10 @@
-/******************************************************************
-Site Name:
-Author:
-URL:
-
-Stylesheet: Main Stylesheet
-******************************************************************/
+/*
+ * Site Name:
+ * Author:
+ * URL:
+ *
+ * Stylesheet: Main Stylesheet
+ */
 
 /* import normalize.css */
 @import "../../bower_components/normalize.css/normalize.css";
@@ -14,50 +14,56 @@ Stylesheet: Main Stylesheet
 /* import neat */
 @import "../../bower_components/neat/app/assets/stylesheets/neat";
 
-/* import mixins */
+/* import settings */
 @import "settings";
 
-/******************************************************************
-BASE (MOBILE) SIZE
-******************************************************************/
+
+/*
+ * BASE (MOBILE) SIZE
+ */
 
 @import "base";
 
-/******************************************************************
-LARGER MOBILE DEVICES
-******************************************************************/
+
+/*
+ * LARGER MOBILE DEVICES
+ */
 
 @media only screen and (min-width: 481px) {
 	@import "481up";
 } /* end of media query */
 
-/******************************************************************
-TABLET & SMALLER LAPTOPS
-******************************************************************/
+
+/*
+ * TABLET & SMALLER LAPTOPS
+ */
 
 @media only screen and (min-width: 768px) {
 	@import "768up";
 } /* end of media query */
 
-/******************************************************************
-DESKTOP
-******************************************************************/
+
+/*
+ * DESKTOP
+ */
 
 @media only screen and (min-width: 1030px) {
 	@import "1030up";
 } /* end of media query */
 
-/******************************************************************
-LARGE VIEWING SIZE
-******************************************************************/
+
+/*
+ * LARGE VIEWING SIZE
+ */
 
 @media only screen and (min-width: 1382px) {
 	@import "1382up";
 } /* end of media query */
 
-/******************************************************************
-RETINA (2x RESOLUTION DEVICES)
-******************************************************************/
+
+/*
+ * RETINA (2x RESOLUTION DEVICES)
+ */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min--moz-device-pixel-ratio: 1.5),
@@ -65,9 +71,10 @@ RETINA (2x RESOLUTION DEVICES)
 	@import "2x";
 } /* end of media query */
 
-/******************************************************************
-PRINT STYLESHEET
-******************************************************************/
+
+/*
+ * PRINT STYLESHEET
+ */
 
 @media print {
 	@import "print";

@@ -5,6 +5,7 @@
     "bourbon": "latest",
     "neat": "latest",
     "jquery": "1.x",
-    "normalize.css": "latest"
+    "normalize.css": "latest",
+    "modernizr": "~2.7.2"
   }
 }

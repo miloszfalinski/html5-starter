@@ -35,15 +35,12 @@ $visual-grid-opacity: 0.5;
 // Change the grid settings
 $max-width: em(1030, 12);
 
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 480px 3);
-
 /*
  * TYPOGRAPHY
  */
 
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+$sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "Georgia", Cambria, Times New Roman, Times, serif;
 
 /*
  * use the best ampersand
