@@ -21,6 +21,12 @@ module.exports = function(grunt) {
 			js: {
 				files: ['lib/js/*.js', 'Gruntfile.js'],
 				tasks: ['jshint', 'modernizr']
+			},
+			html: {
+				files: ['*.html', '*.php'],
+				options: {
+					livereload: true,
+				}
 			}
 		},
 		cssjoin: {
