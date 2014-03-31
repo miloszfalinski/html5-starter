@@ -41,13 +41,7 @@ Assuming you're happy with the default configuration all you need to do is run:
 grunt
 ```
 
-Grunt is set up to watch for changes in the directory, compile all your sass files, minify them and reload your browser once new css is compiled. It'll also run jslint on all javascript files. 
-
-To generate a custom modernizr file with just the things you need, run:
-```shell
-grunt modernizr
-```
-
+Grunt is set up to watch for changes in the directory, compile all your sass files, minify them and reload your browser once new css is compiled. It'll also run jslint on all javascript files. It also generates a custom modernizr javascript file loading only the features you need to detect.
 
 
 ## Special Thanks to:
