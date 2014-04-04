@@ -2,7 +2,7 @@
   "name": "HTML5 Starter",
   "version": "0.1",
   "dependencies": {
-    "bourbon": "latest",
+    "bourbon": "4.x",
     "neat": "latest",
     "jquery": "1.x",
     "normalize.css": "latest",
