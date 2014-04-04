@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 				tasks: ['jshint', 'modernizr']
 			},
 			html: {
-				files: ['*.html', '*.php'],
+				files: ['*.html', '*.php', '**/*.php', '**/*.html'],
 				options: {
 					livereload: true,
 				}
