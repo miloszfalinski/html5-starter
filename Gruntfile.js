@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 		},
 		modernizr: {
 			dist: {
-				'devFile': '/Users/miloszfalinski/Sites/html5-starter/bower_components/modernizr/modernizr.js',
+				'devFile': 'bower_components/modernizr/modernizr.js',
 				'outputFile': 'lib/js/src/modernizr.custom.min.js'
 			}
 		}
