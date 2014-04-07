@@ -3,3 +3,4 @@ npm-debug.log
 tmp
 bower_components
 .sass-cache
+lib/src

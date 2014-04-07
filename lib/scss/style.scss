@@ -7,12 +7,12 @@
  */
 
 /* import normalize.css */
-@import "../../bower_components/normalize.css/normalize.css";
+@import "../src/normalize.css/normalize.css";
 
 /* import bourbon */
-@import "../../bower_components/bourbon/dist/bourbon";
+@import "../src/bourbon/dist/bourbon";
 /* import neat */
-@import "../../bower_components/neat/app/assets/stylesheets/neat";
+@import "../src/neat/app/assets/stylesheets/neat";
 
 /* import settings */
 @import "settings";

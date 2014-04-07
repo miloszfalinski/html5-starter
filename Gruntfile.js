@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: ['lib/scss/*.scss'],
-				tasks: ['sass', 'cssjoin', 'modernizr']
+				tasks: ['sass', 'cssjoin', 'modernizr', 'cssmin']
 			},
 			js: {
 				files: ['lib/js/*.js', 'Gruntfile.js'],
@@ -29,6 +29,15 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		cssmin: {
+			minify: {
+				expand: true,
+				cwd: 'lib/css/',
+				src: ['*.css', '!*.min.css'],
+				dest: 'lib/css/',
+				ext: '.min.css'
+			}
+		},
 		cssjoin: {
 			sameFile : {
 				files:  grunt.file.expandMapping(["lib/css/*.css"]),
@@ -39,7 +48,7 @@ module.exports = function(grunt) {
 		},
 		modernizr: {
 			dist: {
-				'devFile': 'bower_components/modernizr/modernizr.js',
+				'devFile': 'lib/src/modernizr/modernizr.js',
 				'outputFile': 'lib/js/src/modernizr.custom.min.js'
 			}
 		}
@@ -47,6 +56,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-cssjoin');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-modernizr');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.registerTask('default',['watch']);
