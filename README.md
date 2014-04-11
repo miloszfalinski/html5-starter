@@ -6,7 +6,7 @@ A responsive mobile-first starting point for web projects built on the latest an
 
 * **HTML5 and normalize.css** - `index.html` is based on the HTML5 Boilerplate and included is the latest version of `normalize.css` - the best CSS reset available.
 * **LiveReload** - automatically reloads the browser on file change - no apps required.
-* **SASS** - stylesheets are compiled from SASS. Project comes bundled with latest versions of [Bourbon](http://bourbon.io) and [Neat](http://neat.bourbon.io).
+* **SASS** - stylesheets are automatically compiled from SASS and minified. Project comes bundled with latest versions of [Bourbon](http://bourbon.io) and [Neat](http://neat.bourbon.io).
 * **Responsive first CSS** - SASS files are broken down into breakpoints. You start with styling the mobile version first in `base.scss`, then build on top of it, by adding code to respective breakpoint files - eg. contents of `1030up.scss` will be loaded only on a desktop browser.
 * **Autocompiled Modernizr** - automatically compiles modernizr by scanning your css and javascript and determining required features - eg. if it detects an svg file in your code, it will automatically add the `svg` check to modernizr.
 * **Responsive Javascript** - `scripts.js` has a snippet that will let you load  Javascript code depending on the browser width. This is already optimized for speed so it fires only once, after the `$(window).resize` event.
