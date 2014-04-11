@@ -52,6 +52,18 @@ module.exports = function(grunt) {
 				'outputFile': 'lib/js/src/modernizr.custom.min.js',
 				'extra' : {
 					'shiv' : true
+				},
+				'parseFiles' : true,
+				'files': {
+					'src': [
+						'lib/js/*.js',
+						'lib/css/*.css',
+						'*.html',
+						'*.php',
+						'**/*.php',
+						'**/*.html',
+						'!lib/src/modernizr/test/*.html',
+					]
 				}
 			}
 		}
