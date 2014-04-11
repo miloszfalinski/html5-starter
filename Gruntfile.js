@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 				livereload: true,
 			},
 			css: {
-				files: ['lib/scss/*.scss'],
+				files: ['lib/scss/*.scss', 'lib/scss/**/*.scss'],
 				tasks: ['sass', 'cssjoin', 'modernizr', 'cssmin']
 			},
 			js: {
@@ -49,7 +49,10 @@ module.exports = function(grunt) {
 		modernizr: {
 			dist: {
 				'devFile': 'lib/src/modernizr/modernizr.js',
-				'outputFile': 'lib/js/src/modernizr.custom.min.js'
+				'outputFile': 'lib/js/src/modernizr.custom.min.js',
+				'extra' : {
+					'shiv' : true
+				}
 			}
 		}
 	});

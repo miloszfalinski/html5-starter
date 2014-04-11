@@ -1,6 +1,5 @@
 {
   "name": "HTML5 Starter",
-  "version": "0.1",
   "dependencies": {
     "bourbon": "4.x",
     "neat": "latest",
