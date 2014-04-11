@@ -13,7 +13,7 @@ A responsive mobile-first starting point for web projects built on the latest an
 
 ## Installation
 
-Once you download or clone the repository to your hard drive, you'll need to install some things. Requirements for this project are: ruby gem `sass`, `node.js`, `npm` and node packages - `bower` and `grunt-cli`.
+Once you download or clone the repository to your hard drive, you'll need to install some things. Requirements for this project are: ruby gem `sass`, `node.js`, `npm` and node packages - `bower` and `grunt-cli`. NOTE: If you're using Windows, the setup process is probably a bit different.
 
 Install SASS with:
 ```shell
@@ -25,7 +25,7 @@ or to make sure you have the latest version, update the gem:
 gem update sass
 ```
 
-If you don't have it already you will have to install `node` - instructions on the [official website](http://nodejs.org). NOTE: If you're using Windows, the setup process is probably a bit different.
+If you don't have it already you will have to install `node` - instructions on the [official website](http://nodejs.org). 
 
 Assuming you have `sass` and `node` you need to install `grunt` and `bower`.
 
