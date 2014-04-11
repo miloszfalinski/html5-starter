@@ -27,7 +27,7 @@ gem update sass
 
 If you don't have it already you will have to install `node` - instructions on the [official website](http://nodejs.org). 
 
-Assuming you have `sass` and `node` you need to install `grunt` and `bower`.
+Now that you have `sass` and `node`, you need to install `grunt` and `bower`.
 
 ```shell
 npm install -g grunt-cli
