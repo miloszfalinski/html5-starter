@@ -1,12 +1,11 @@
 /*
  * Site Name:
  * Author:
+ * URL:
  *
- * Stylesheet: IE Styles
- * These styles are all loaded for IE so that they get the regular
- * view since the older versions don't understand Media Queries.
+ * Stylesheet: Main Stylesheet
  */
-/* import reset */
+/* import normalize.css */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
 /**
@@ -217,6 +216,7 @@ figure {
 
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -340,6 +340,8 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -469,7 +471,9 @@ span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
   font-style: italic; }
 
-/* import styles on top of base */
+/*
+ * BASE (MOBILE) SIZE
+ */
 /*
  * Site Name:
  * Author:
@@ -482,81 +486,127 @@ span.amp {
  *
  */
 /*
- * Site Name:
- * Author:
- *
- * Stylesheet: 481 & Up
- *
+ * LARGER MOBILE DEVICES
  */
+@media only screen and (min-width: 481px) {
+  /*
+   * Site Name:
+   * Author:
+   *
+   * Stylesheet: 481 & Up
+   *
+   */ }
+/* end of media query */
 /*
- * Site Name:
- * Author:
- *
- * Stylesheet: 768 & Up
- *
- * This is the base tablet style.
+ * TABLET & SMALLER LAPTOPS
  */
+@media only screen and (min-width: 768px) {
+  /*
+   * Site Name:
+   * Author:
+   *
+   * Stylesheet: 768 & Up
+   *
+   * This is the base tablet style.
+   */ }
+/* end of media query */
 /*
- * Site Name:
- * Author:
- *
- * Stylesheet: 1030 & Up
- *
- * This is the average viewing window. So Desktops, Laptops, and
- * in general anyone not viewing on a mobile device or a tablet. Here's where
- * you can add resource intensive styles.
+ * DESKTOP
  */
-/* import print */
+@media only screen and (min-width: 1030px) {
+  /*
+   * Site Name:
+   * Author:
+   *
+   * Stylesheet: 1030 & Up
+   *
+   * This is the average viewing window. So Desktops, Laptops, and
+   * in general anyone not viewing on a mobile device or a tablet. Here's where
+   * you can add resource intensive styles.
+   */ }
+/* end of media query */
 /*
- * Site Name:
- * Author:
- *
- * Stylesheet: Print Stylesheet
- *
- * Feel free to customize this. Remember to add things that won't make
- * sense to print at the bottom. Things like nav, ads, and forms should
- * be set to display none.
+ * LARGE VIEWING SIZE
  */
-* {
-  background: transparent !important;
-  color: black !important;
-  text-shadow: none !important;
-  filter: none !important;
-  -ms-filter: none !important; }
+@media only screen and (min-width: 1382px) {
+  /*
+   * Site Name:
+   * Author:
+   *
+   * Stylesheet: 1382 & Up
+   *
+   * This is for the larger monitors and possibly full screen viewers.
+   */ }
+/* end of media query */
+/*
+ * RETINA (2x RESOLUTION DEVICES)
+ */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Retina Displays
+  
+  This applies displays with a 2x resolution.
+  ******************************************************************/ }
+/* end of media query */
+/*
+ * PRINT STYLESHEET
+ */
+@media print {
+  /*
+   * Site Name:
+   * Author:
+   *
+   * Stylesheet: Print Stylesheet
+   *
+   * Feel free to customize this. Remember to add things that won't make
+   * sense to print at the bottom. Things like nav, ads, and forms should
+   * be set to display none.
+   */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    -webkit-filter: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
 
-a, a:visited {
-  color: #444 !important;
-  text-decoration: underline; }
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
 
-a[href]:after {
-  content: " (" attr(href) ")"; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
 
-abbr[title]:after {
-  content: " (" attr(title) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
 
-.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-  content: ""; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
 
-pre, blockquote {
-  border: 1px solid #999;
-  page-break-inside: avoid; }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
 
-thead {
-  display: table-header-group; }
+  thead {
+    display: table-header-group; }
 
-tr, img {
-  page-break-inside: avoid; }
+  tr, img {
+    page-break-inside: avoid; }
 
-img {
-  max-width: 100% !important; }
+  img {
+    max-width: 100% !important; }
 
-@page {
-  margin: 0.5cm; }
-p, h2, h3 {
-  orphans: 3;
-  widows: 3; }
+  @page {
+    margin: 0.5cm; }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
 
-h2, h3 {
-  page-break-after: avoid; }
+  h2, h3 {
+    page-break-after: avoid; }
 
-/* custom print styles go under here */
+  /* custom print styles go under here */ }
+/* end print media query */

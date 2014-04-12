@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 			},
 			css: {
 				files: ['lib/scss/*.scss', 'lib/scss/**/*.scss'],
-				tasks: ['sass', 'cssjoin', 'modernizr', 'cssmin']
+				tasks: ['sass', 'cssjoin', 'modernizr', 'autoprefixer', 'cssmin']
 			},
 			js: {
 				files: ['lib/js/*.js', 'Gruntfile.js'],
@@ -40,11 +40,18 @@ module.exports = function(grunt) {
 		},
 		cssjoin: {
 			sameFile : {
-				files:  grunt.file.expandMapping(["lib/css/*.css"]),
+				files:  grunt.file.expandMapping(['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css']),
 			}
 		},
 		jshint: {
 			all: ['Gruntfile.js', 'lib/js/*.js']
+		},
+		autoprefixer: {
+			multiple_files: {
+				expand: true,
+				flatten: true,
+				src: ['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css']
+			},
 		},
 		modernizr: {
 			dist: {
@@ -74,5 +81,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-modernizr');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.registerTask('default',['watch']);
 };
