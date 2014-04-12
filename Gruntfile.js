@@ -50,7 +50,8 @@ module.exports = function(grunt) {
 			multiple_files: {
 				expand: true,
 				flatten: true,
-				src: ['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css']
+				src: ['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css'],
+				dest: 'lib/css/'
 			},
 		},
 		modernizr: {
