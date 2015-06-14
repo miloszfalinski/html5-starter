@@ -10,7 +10,7 @@
 @import "../src/normalize.css/normalize.css";
 
 /* import bourbon */
-@import "../src/bourbon/dist/bourbon";
+@import "../src/app/assets/stylesheets/bourbon";
 /* import neat */
 @import "../src/neat/app/assets/stylesheets/neat";
 
@@ -29,8 +29,22 @@
  * LARGER MOBILE DEVICES
  */
 
+@media only screen and (min-width: 375px) {
+  @import "375up";
+} /* end of media query */
+
+
 @media only screen and (min-width: 481px) {
 	@import "481up";
+} /* end of media query */
+
+
+/*
+ * ONLY MOBILE DEVICES
+ */
+
+@media only screen and (max-width: 767px) {
+  @import "767down";
 } /* end of media query */
 
 

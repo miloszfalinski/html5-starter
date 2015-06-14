@@ -10,7 +10,7 @@
 /* import reset */
 @import "../src/normalize.css/normalize.css";
 /* import bourbon */
-@import "../src/bourbon/dist/bourbon";
+@import "../src/bourbon/app/assets/stylesheets/bourbon";
 /* import neat */
 @import "../src/neat/app/assets/stylesheets/neat";
 
@@ -19,6 +19,7 @@
 
 /* import styles on top of base */
 @import "base";
+@import "375up";
 @import "481up";
 @import "768up";
 @import "1030up";
