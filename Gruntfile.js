@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
+					'lib/css/module.css' : 'lib/scss/module.scss',
 					'lib/css/style.css' : 'lib/scss/style.scss',
 					'lib/css/ie.css' : 'lib/scss/ie.scss',
 					'lib/css/print.css' : 'lib/scss/print.scss'
@@ -40,7 +41,7 @@ module.exports = function(grunt) {
 		},
 		cssjoin: {
 			sameFile : {
-				files:  grunt.file.expandMapping(['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css']),
+				files:  grunt.file.expandMapping(['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css', 'lib/css/module.css']),
 			}
 		},
 		jshint: {
@@ -50,7 +51,7 @@ module.exports = function(grunt) {
 			multiple_files: {
 				expand: true,
 				flatten: true,
-				src: ['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css'],
+				src: ['lib/css/ie.css', 'lib/css/print.css', 'lib/css/style.css', 'lib/css/module.css'],
 				dest: 'lib/css/'
 			},
 		},

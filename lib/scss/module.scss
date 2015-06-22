@@ -1,16 +1,6 @@
-/*
- * Site Name:
- * Author:
- * URL:
- *
- * Stylesheet: Main Stylesheet
- */
-
-/* import normalize.css */
-@import "../src/normalize.css/normalize.css";
 
 /* import bourbon */
-@import "../src/app/assets/stylesheets/bourbon";
+@import "../src/bourbon/app/assets/stylesheets/bourbon";
 /* import neat */
 @import "../src/neat/app/assets/stylesheets/neat";
 
@@ -18,33 +8,28 @@
 @import "settings";
 
 
-/*
- * BASE (MOBILE) SIZE
- */
+@import "module/base";
 
-@import "base";
 
+@media only screen and (max-width: 374px) {
+  @import "module/374down";
+} /* end of media query */
 
 /*
  * LARGER MOBILE DEVICES
  */
 
 @media only screen and (min-width: 375px) {
-  @import "375up";
+  @import "module/375up";
 } /* end of media query */
 
 
 @media only screen and (min-width: 481px) {
-	@import "481up";
+	@import "module/481up";
 } /* end of media query */
 
-
-/*
- * ONLY MOBILE DEVICES
- */
-
 @media only screen and (max-width: 767px) {
-  @import "767down";
+  @import "module/767down";
 } /* end of media query */
 
 
@@ -53,7 +38,7 @@
  */
 
 @media only screen and (min-width: 768px) {
-	@import "768up";
+	@import "module/768up";
 } /* end of media query */
 
 
@@ -62,7 +47,7 @@
  */
 
 @media only screen and (min-width: 1024px) {
-	@import "1024up";
+	@import "module/1024up";
 } /* end of media query */
 
 
@@ -71,7 +56,7 @@
  */
 
 @media only screen and (min-width: 1382px) {
-	@import "1382up";
+	@import "module/1382up";
 } /* end of media query */
 
 
@@ -84,13 +69,3 @@
        only screen and (min-device-pixel-ratio: 1.5) {
 	@import "2x";
 } /* end of media query */
-
-
-/*
- * PRINT STYLESHEET
- */
-
-@media print {
-	@import "print";
-} /* end print media query */
-
