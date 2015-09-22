@@ -7,13 +7,8 @@
 /* import settings */
 @import "settings";
 
-
 @import "module/base";
 
-
-@media only screen and (max-width: 374px) {
-  @import "module/374down";
-} /* end of media query */
 
 /*
  * LARGER MOBILE DEVICES

@@ -1,0 +1,99 @@
+/* import bourbon */
+/* import neat */
+html {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* import settings */
+/*
+ * Site Name:
+ * Author:
+ *
+ * Stylesheet: Settings
+ *
+ * Think of this as a 'variable file'. All custom reusable
+ * values will be found here. Neat's grid is also configured here.
+ */
+/*
+ * COLORS
+ * Need help w/ choosing your colors? Try this site out:
+ * http://0to255.com/
+ */
+/*
+ * GRID
+ */
+/*
+ * TYPOGRAPHY
+ */
+/*
+ * use the best ampersand
+ * http://simplebits.com/notebook/2008/08/14/ampersands-2/
+ */
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+  font-style: italic; }
+
+/*
+ * Module file: Base size
+ */
+/*
+ * LARGER MOBILE DEVICES
+ */
+@media only screen and (min-width: 375px) {
+  /*
+   * Module file: Large mobile size - 375up (eg. iPhone 6)
+   */ }
+/* end of media query */
+@media only screen and (min-width: 481px) {
+  /*
+   * Module file: Large horizontal mobile - 481up
+   */ }
+/* end of media query */
+@media only screen and (max-width: 767px) {
+  /*
+   * Module file: All mobile sizes - 767down
+   */ }
+/* end of media query */
+/*
+ * TABLET & SMALLER LAPTOPS
+ */
+@media only screen and (min-width: 768px) {
+  /*
+   * Module file: All mobile sizes - 767down
+   */ }
+/* end of media query */
+/*
+ * DESKTOP
+ */
+@media only screen and (min-width: 1024px) {
+  /*
+   * Module file: Desktop size - 1024up
+   */ }
+/* end of media query */
+/*
+ * LARGE VIEWING SIZE
+ */
+@media only screen and (min-width: 1382px) {
+  /*
+   * Module file: Large desktop size - 1382up
+   */ }
+/* end of media query */
+/*
+ * RETINA (2x RESOLUTION DEVICES)
+ */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Retina Displays
+  
+  This applies displays with a 2x resolution.
+  ******************************************************************/ }
+/* end of media query */
+
+/*# sourceMappingURL=module.css.map */
